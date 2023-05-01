@@ -1,3 +1,6 @@
+# [freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
+
+
 ## Comment Your JavaScript Code
 
 Comments are lines of code that JavaScript will intentionally ignore. Comments are a great way to leave notes to yourself and to other people who will later need to figure out what that code does.
@@ -501,3 +504,531 @@ let myVar = 11;
 // Only change code below this line
 myVar--;
 ```
+
+## Create Decimal Numbers with JavaScript
+
+We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or floats.
+
+### Test
+1. Create a variable myDecimal and give it a decimal value with a fractional part (e.g. 5.7).
+
+### Given Code
+
+```javascript
+const ourDecimal = 5.7;
+
+// Only change code below this line
+```
+### Answer
+```javascript
+const ourDecimal = 5.7;
+
+// Only change code below this line
+
+const myDecimal = 5.7
+```
+
+## Multiply Two Decimals with JavaScript
+
+In JavaScript, we can also perform calculations with decimal numbers, just like whole numbers.
+
+### Test
+1. Change the 0.0 so that product will equal 5.0.
+
+### Given Code
+```javascript
+const product = 2.0 * 0.0;
+```
+
+### Answer
+```javascript
+const product = 2.0 * 2.5;
+```
+
+## Divide One Decimal by Another with JavaScript
+
+Now let's divide one decimal by another.
+
+### Test
+1. Change the 0.0 so that quotient will equal to 2.2
+
+### Code Given
+```javascript
+const quotient = 0.0 / 2.0; // Change this line
+```
+
+### Answer
+```javascript
+const quotient = 4.4 / 2.0
+```
+
+## Finding a Remainder in JavaScript
+
+The remainder operator % gives the remainder of the division of two numbers.
+
+**Example**
+
+5 % 2 = 1
+5 / 2 = 2 remainder 1
+2 * 2 = 4
+5 - 4 = 1
+Usage
+In mathematics, a number can be checked to be even or odd by checking the remainder of the division of the number by 2. Even numbers have a remainder of 0, while odd numbers a remainder of 1.
+
+17 % 2 = 1
+48 % 2 = 0 <br><br>
+**Note:** The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.
+
+### Test
+1. Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator.
+
+### Code Given
+```javascript
+const remainder = 0;
+```
+
+### Answer
+```javascript
+const remainder = 11%3;
+console.log(remainder);
+```
+
+## Compound Assignment With Augmented Addition
+
+In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
+
+myVar = myVar + 5;
+to add 5 to myVar. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
+
+One such operator is the += operator.
+
+let myVar = 1;
+myVar += 5;
+console.log(myVar);
+6 would be displayed in the console.
+
+### Test
+1. Convert the assignments for a, b, and c to use the += operator.
+
+### Code Given
+```javascript
+let a = 3;
+let b = 17;
+let c = 12;
+
+// Only change code below this line
+a = a + 12;
+b = 9 + b;
+c = c + 7;
+```
+
+### Answer
+```javascript
+let a = 3;
+let b = 17;
+let c = 12;
+
+// Only change code below this line
+a += 12;
+b += 9;
+c += 7;
+
+console.log(a);
+console.log(b);
+console.log(c);
+```
+## Compound Assignment With Augmented Subtraction
+
+Like the += operator, -= subtracts a number from a variable.
+
+myVar = myVar - 5;
+will subtract 5 from myVar. This can be rewritten as:
+
+myVar -= 5;
+
+### Test
+1. Convert the assignments for a, b, and c to use the -= operator.
+
+### Code Given
+```javascript
+let a = 11;
+let b = 9;
+let c = 3;
+
+// Only change code below this line
+a = a - 6;
+b = b - 15;
+c = c - 1;
+```
+
+### Answer
+```javascript
+let a = 11;
+let b = 9;
+let c = 3;
+
+// Only change code below this line
+a -= 6;
+b -= 15;
+c -= 1;
+
+console.log(a);
+console.log(b);
+console.log(c);
+```
+
+
+## Compound Assignment With Augmented Multiplication
+
+The *= operator multiplies a variable by a number.
+
+myVar = myVar * 5;
+will multiply myVar by 5. This can be rewritten as:
+
+myVar *= 5;
+
+### Test
+1. Convert the assignments for a, b, and c to use the *= operator.
+
+### Code Given
+```javascript
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a = a * 5;
+b = 3 * b;
+c = c * 10;
+```
+
+### Answer
+```javascript
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+
+console.log(a);
+console.log(b);
+console.log(c);
+```
+
+## Compound Assignment With Augmented Division
+
+The /= operator divides a variable by another number.
+
+myVar = myVar / 5;
+Will divide myVar by 5. This can be rewritten as:
+
+myVar /= 5;
+
+### Test
+1. Convert the assignments for a, b, and c to use the /= operator.
+
+### Code Given 
+```javascript
+let a = 48;
+let b = 108;
+let c = 33;
+
+// Only change code below this line
+a = a / 12;
+b = b / 4;
+c = c / 11;
+```
+
+### Answer
+```javascript
+let a = 48;
+let b = 108;
+let c = 33;
+
+// Only change code below this line
+a /= 12;
+b /= 4;
+c /= 11;
+
+console.log(a);
+console.log(b);
+console.log(c);
+```
+
+## Escaping Literal Quotes in Strings
+
+When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: " or ' inside of your string?
+
+In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
+
+```javascript
+const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+```
+This signals to JavaScript that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
+
+```javascript
+Alan said, "Peter is learning JavaScript".
+```
+
+### Test
+1. Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
+
+```javascript
+I am a "double quoted" string inside "double quotes".
+```
+
+### Code Given
+
+```javascript
+const myStr = ""; // Change this line
+```
+
+### Answer
+
+```javascript
+const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+```
+
+
+## Quoting Strings with Single Quotes
+
+String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote. Unlike some other programming languages, single and double quotes work the same in JavaScript.
+
+```javascript
+const doubleQuoteStr = "This is a string"; 
+const singleQuoteStr = 'This is also a string';
+```
+The reason why you might want to use one type of quote over the other is if you want to use both in a string. This might happen if you want to save a conversation in a string and have the conversation in quotes. Another use for it would be saving an `<a>` tag with various attributes in quotes, all within a string.
+
+```javascript
+const conversation = 'Finn exclaims to Jake, "Algebraic!"';
+```
+However, this becomes a problem if you need to use the outermost quotes within it. Remember, a string has the same kind of quote at the beginning and end. But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
+
+```javascript
+const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
+const badStr = 'Finn responds, "Let's go!"';
+```
+
+Here badStr will throw an error.
+
+In the goodStr above, you can use both quotes safely by using the backslash \ as an escape character.
+
+**Note:** The backslash \ should not be confused with the forward slash /. They do not do the same thing.
+
+
+### Test
+1. Change the provided string to a string with single quotes at the beginning and end and no escape characters.
+
+Right now, the `<a>` tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters.
+
+### Code Given
+```javascript
+const myStr = "<a href=\"http://www.example.com\" target=\"_blank">Link</a>";
+```
+
+### Answer
+```javascript
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+```
+
+## Escape Sequences in Strings
+
+Quotes are not the only characters that can be escaped inside a string. Escape sequences allow you to use characters you may not otherwise be able to use in a string.
+
+```javascript
+Code	Output
+\'	single quote 
+\"	double quote
+\\	backslash
+\n	newline
+\t	tab
+\r	carriage return
+\b	backspace
+\f	form feed
+```
+Note that the backslash itself must be escaped in order to display as a backslash.
+
+### Test
+1. Assign the following three lines of text into the single variable myStr using escape sequences.
+
+```javascript
+FirstLine
+    \SecondLine
+ThirdLine
+```
+
+You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.
+
+**Note:** The indentation for SecondLine is achieved with the tab escape character, not spaces.
+
+### Code Given
+```javascript
+const myStr = ""; // Change this line
+```
+
+### Answer
+```javascript
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+```
+
+## Concatenating Strings with Plus Operator
+
+In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+
+Example
+
+`'My name is Alan,' + ' I concatenate.'` <br>
+
+**Note:** Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+Example:
+
+`const ourStr = "I come first. " + "I come second.";`<br>
+
+The string I come first. I come second. would be displayed in the console.
+
+### Test
+1. Build myStr from the strings `This is the start.` and `This is the end.` using the `+` operator. Be sure to include a space between the two strings.
+
+### Code Given
+```javascript
+const myStr = ""// Change this line;
+```
+
+### Answer
+```javascript
+const myStr = "This is the start. " + "This is the end.";
+```
+
+
+## Concatenating Strings with the Plus Equals Operator
+We can also use the `+=` operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+
+**Note:** Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+Example:
+
+```javascript
+let ourStr = "I come first. ";
+ourStr += "I come second.";
+```
+`ourStr` now has a value of the string `I come first. I come second..`
+
+### Test
+1. Build myStr over several lines by concatenating these two strings: `This is the first sentence.` and `This is the second sentence.` using the `+=` operator. Use the `+=` operator similar to how it is shown in the example and be sure to include a space between the two strings. Start by assigning the first string to `myStr`, then add on the second string.
+
+
+### Code Given
+```javascript
+let myStr;
+```
+
+### Answer
+```javascript
+let myStr = "This is the first sentence. "
+myStr += "This is the second sentence."
+```
+
+## Constructing Strings with Variables
+
+Sometimes you will need to build a string. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
+
+Example:
+
+```javascript
+const ourName = "freeCodeCamp";
+const ourStr = "Hello, our name is " + ourName + ", how are you?";
+```
+ourStr would have a value of the string Hello, our name is freeCodeCamp, how are you?.
+
+### Test
+1. Set `myName` to a string equal to your name and build `myStr` with myName between the strings `My name is and` and `I am well!`
+
+### Code Given
+
+```javascript
+// Only change code below this line
+const myName = "";
+const myStr = "";
+```
+
+### Answer
+
+```javascript
+// Only change code below this line
+const myName = "V Sagar";
+const myStr = "My name is and " + myName + "I am well!";
+```
+
+## Appending Variables to Strings
+
+Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals `(+=)` operator.
+
+Example:
+
+```javascript
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+```
+`ourStr` would have the value freeCodeCamp is awesome!.
+
+### Test
+1. Set `someAdjective` to a string of at least 3 characters and append it to `myStr` using the `+=` operator.
+
+### Code Given
+```javascript
+// Change code below this line
+const someAdjective = "";
+let myStr = "Learning to code is ";
+```
+
+### Answer
+```javascript
+// Change code below this line
+const someAdjective = "awesome";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+```
+
+## Find the Length of a String
+
+You can find the length of a String value by writing `.length` after the string variable or string literal.
+
+`console.log("Alan Peter".length);` <br>
+
+The value 10 would be displayed in the console. Note that the space character between "Alan" and "Peter" is also counted.
+
+For example, if we created a variable `const firstName = "Ada",` we could find out how long the string `Ada` is by using the `firstName.length` property.
+
+### Test
+1. Use the `.length` property to set `lastNameLength` to the number of characters in lastName.
+
+### Code Given
+```javascript
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName;
+```
+
+### Answer
+```javascript
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
+```
+
+
+
+
+
